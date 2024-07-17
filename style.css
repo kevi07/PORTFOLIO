@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    font-family: "Lora", serif;
+   
+    
+}
+.nanum-gothic-regular {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li , a{
+    margin:0 60px;
+    list-style: none;
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+}
+nav ul li a:hover {
+
+    color: #fd6868;
+}
+section{
+    padding: 75px 20px;
+    min-height: 80vh;
+}
+.section1 {
+    /* background-color: #f4f4f4; */
+    background-color: #f4f4f4;
+}
+.section1 img{
+    /* display: inline-flex; */
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+    margin-left: 120px;
+}
+.bio{
+    float: right;
+    position: relative;
+    margin-right: 150px;
+    margin-top: 100px;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.section2 {
+    /* background-color: #e2e2e2; */
+    background-color: #f4f4f4;
+}
+.section2 img{
+    margin-top: 140px;
+    margin-right: 180px;
+    float: right;
+}
+.biography{
+    margin-left: 60px;
+}
+.skill{
+    margin-left: 60px;
+    width:600px;
+    height: 250px;
+}
+.skill ul{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.skill ul li{
+    display: flexbox;
+    list-style: none;
+    border: #b2b2b2 2px solid;
+    padding: 8px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 6px 30px;
+   text-align: center;
+}
+
+.section3 {
+    /* background-color: #cccccc; */
+    background-color: #f4f4f4;
+}
+.education{
+    /* display: inline-block; */
+    margin-left: 60px;
+    /* margin-top: 50px; */
+}
+.year{
+    float: right;
+    font-size: 70px;
+    margin-right: 80px;
+}
+.education-details ul li{
+    list-style: none;
+}
+.education-details{
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 230px;
+}
+.education-section{
+    display: inline-flex;
+}
+.section4 {
+    /* background-color: #b2b2b2; */
+    background-color: #f4f4f4;
+}
+.project-details ul li{
+    list-style: none;
+    padding: 10px;
+}
+.project-details{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.section4 h1{
+    margin-left: 60px;
+}
+.project-details ul li p{
+    float: right;
+    width: 400px;
+    display: inline-flex;
+    margin-top: -80px;
+    margin-right: 400px;
+}
+
+
+
+
+.section5 {
+    min-height: 120vh;
+    background-color: #101010;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container .card {
+    position: relative;
+    width: 200px;
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+.container .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .03);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+
+.percent .num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .num h2 {
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.card:hover .percent .num h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.percent .num h2 span {
+    color: #777;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.card:hover .percent .num h2 span {
+    color: #fff;
+}
+
+.text {
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.card:hover .text {
+    color: #fff;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #00ff43;
+}
+footer{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
